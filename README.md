@@ -20,6 +20,10 @@ The core idea is the same: you're not touching the harness Python files like you
 
 The repo has a few files and directories that matter:
 
+- **`docs/auto-agent-analysis.zh.md`** -- Chinese deep dive covering the
+  AutoAgent design ideas, architecture, business flow, startup plan, extension
+  points, and troubleshooting notes.
+
 - **`agent.py`** -- the entire harness under test in a single file. It contains
   config, tool definitions, agent registry, routing/orchestration, and the
   Harbor adapter boundary. The adapter section is explicitly marked as fixed;
@@ -38,7 +42,7 @@ meta-agent hill-climbs on this score.
 
 ## Quick start
 
-**Requirements:** Docker, Python 3.10+, [uv](https://docs.astral.sh/uv/), and
+**Requirements:** Docker, Python 3.12+, [uv](https://docs.astral.sh/uv/), and
 whatever model-provider credentials your current `agent.py` harness requires.
 
 ```bash
@@ -153,4 +157,3 @@ You can equip the agent with [Agent Skills for Context Engineering](https://gith
 ## License
 
 MIT
-
